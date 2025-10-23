@@ -1,4 +1,4 @@
-# Matthew Mills Portfolio
+# Matthew Mills
 
 Welcome to my personal portfolio! This repository showcases my projects, skills, and experience as I pursue opportunities in software development and related fields.
 
