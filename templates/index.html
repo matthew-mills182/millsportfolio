@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}Home - My Portfolio{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row align-items-center mb-5">
+        <div class="col-md-4 text-center">
+            <img src="{{ url_for('static', filename='images/headshot.jpg') }}" class="img-fluid rounded-circle mb-3" alt="Matthew Mills Headshot">
+        </div>
+        <div class="col-md-8">
+            <h1 class="display-4">Hi, I'm Matthew Mills!</h1>
+            <p class="lead">
+                I’m a senior Informatics student at the Luddy School of Informatics at Indiana University, 
+                with a minor in Cognitive Science. I’m passionate about web development and love tackling 
+                challenging problems, building projects, and learning new technologies along the way.
+            </p>
+        </div>
+    </div>
+
+    <div class="row text-center">
+        <div class="col-md-4 mb-4">
+            <div class="p-3 border rounded shadow-sm">
+                <h3>Web Development</h3>
+                <p>Creating interactive, responsive, and user-friendly web applications.</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="p-3 border rounded shadow-sm">
+                <h3>Problem Solving</h3>
+                <p>Tackling challenging problems with logical thinking and creative solutions.</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="p-3 border rounded shadow-sm">
+                <h3>Continuous Learning</h3>
+                <p>Always exploring new technologies and techniques to improve my skills.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
