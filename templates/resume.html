@@ -5,13 +5,13 @@
 {% block content %}
 <div class="text-center mt-5">
     <h1>Resume</h1>
-    <p>You can scroll through it below or download it.</p>
+    <p>You can scroll through it here or download it at the bottom.</p>
 
     <!-- image of PDF -->
     <img src="{{ url_for('static', filename='images/resume.jpg') }}" class="img-fluid border border-dark rounded mt-4" alt="Resume">    
     <!-- download link -->
     <div class="mt-3">
-        <a href="{{ url_for('static', filename='resumefinal.pdf') }}" class="btn btn-primary" download>Download Resume</a>
+        <a href="{{ url_for('static', filename='resumefinal.pdf') }}" class="btn btn-secondary" download>Download Resume</a>
     </div>
 </div>
 {% endblock %}

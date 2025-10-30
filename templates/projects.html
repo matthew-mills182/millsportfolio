@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}Projects - My Portfolio{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center mb-5">My Projects</h1>
+
+    <div class="row">
+        <!-- Project 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm hover-card">
+                <img src="{{ url_for('static', filename='images/headshot.jpg') }}" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                    <h5 class="card-title">Project One</h5>
+                    <p class="card-text">A brief description of what this project does and the technologies used.</p>
+                    <a href="https://github.com/username/project1" target="_blank" class="btn btn-secondary">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm hover-card">
+                <img src="{{ url_for('static', filename='images/project2.png') }}" class="card-img-top" alt="Project 2">
+                <div class="card-body">
+                    <h5 class="card-title">Project Two</h5>
+                    <p class="card-text">A short description highlighting what makes this project interesting.</p>
+                    <a href="https://github.com/username/project2" target="_blank" class="btn btn-secondary">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm hover-card">
+                <img src="{{ url_for('static', filename='images/project3.png') }}" class="card-img-top" alt="Project 3">
+                <div class="card-body">
+                    <h5 class="card-title">Project Three</h5>
+                    <p class="card-text">Another short description of this project’s purpose and technologies.</p>
+                    <a href="https://github.com/username/project3" target="_blank" class="btn btn-secondary">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
